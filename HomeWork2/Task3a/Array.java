@@ -26,7 +26,27 @@ public class Array {
                 System.out.println(number[j]);
             }
         }
+        System.out.println("Index of Array");
+        int elementSearch = -2;
+        System.out.println(Array.searchIndexArray(number, elementSearch));
+
+
+        }
+
+    public static int searchIndexArray(int[] ArraySearch, int elementSearch) {
+        int index = -1;
+        for (int S = 0; S < ArraySearch.length; S++) {
+            if (elementSearch == ArraySearch[S]) {
+                index = S;
+                break;
+            }
+        }
+        return index;
+
     }
 }
+
+
+
 
 
